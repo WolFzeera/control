@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, user-scalable=no">
+    <title>Soberania Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="noise"></div>
+
+    <div id="alert-overlay">
+        <div class="alert-message" id="alert-text">ACESSO NEGADO</div>
+    </div>
+
+    <!-- Phase 1: Portal Biométrico -->
+    <div id="phase-1">
+        <input type="file" id="file-input" accept="image/*" capture="user">
+        <button class="btn" id="start-scan-btn">INICIAR ESCANEAMENTO OBRIGATÓRIO</button>
+
+        <div class="progress-container" id="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        <div class="progress-text" id="progress-text">Iniciando protocolo...</div>
+
+        <div id="welcome-message">
+            Reconhecimento concluído.<br><br>Bem-vinda sob a minha jurisdição.
+        </div>
+    </div>
+
+    <div id="phase-2" style="display: none;">
+        <div class="scroll-container" id="blocks-container">
+        </div>
+
+        <div id="countdown-container">
+            <div class="block-time">PRÓXIMA REVELAÇÃO EM</div>
+            <div id="countdown">--:--:--</div>
+        </div>
+    </div>
+
+    <div id="phase-3">
+        <img id="climax-photo" src="" alt="Registro biométrico ausente... Mas a essência foi capturada.">
+        <div class="final-message">
+            O ciclo está completo.<br>
+            Você pertence a este domínio agora.<br>
+            A submissão é absoluta.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
