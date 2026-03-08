@@ -48,8 +48,13 @@ const climaxPhoto = document.getElementById('climax-photo');
 
 let capturedImageSrc = null;
 
+// Force clear file input on load to ensure iOS prompts for camera every time
+fileInput.value = '';
+
 startBtn.addEventListener('click', (e) => {
     e.stopPropagation();
+    // Clear value right before click just in case
+    fileInput.value = '';
     fileInput.click();
 });
 
